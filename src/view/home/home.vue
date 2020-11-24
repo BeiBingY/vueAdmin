@@ -1,21 +1,21 @@
 <template>
-    <div>首页</div>
+    <div>
+        <!-- 普通版的图片上传，包含单个图片和多个图片 -->
+        <v-upload-single></v-upload-single>
+    </div>
 </template>
 
 <script>
 export default {
     data() {
-        return {
-
-        }
+        return {}
     },
-    created() {
-        this.$axios.post('/login').then(res => {
-            console.log(res, '请求成功')
-        }).catch(err => {
-            console.log(err.code, '请求失败')
-        })
-    }
+
+    components: {
+        'v-upload-single': () => import('@/components/v-upload/single')
+    },
+
+    methods: {}
 }
 </script>
 
