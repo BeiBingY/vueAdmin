@@ -2,19 +2,6 @@
     <div>
         <div>
             <div class="title">单个图片上传</div>
-
-            <div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-            </div>
-
             <div>
                 <img style="width: 100px;" :src="'http://127.0.0.1:414/'+img1Data.path" alt="">
             </div>

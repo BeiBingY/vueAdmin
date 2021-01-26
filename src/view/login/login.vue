@@ -1,6 +1,7 @@
 <template>
     <div>登录界面
         <el-button @click="login">点击登录</el-button>
+        <v-ceshi></v-ceshi>
     </div>
 </template>
 
@@ -14,6 +15,9 @@ export default {
                 user_password: '18888888883'
             }
         }
+    },
+    components: {
+        'v-ceshi': () => import('@/components/v-ceshi/ceshi')
     },
     methods: {
         login() {
